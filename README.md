@@ -116,20 +116,16 @@ Amazon CloudFront is a CDN (Content Delivery Network) that delivers your website
 - User requests your website
 - CloudFront serves from nearest server
 
-🔄 Detailed Flow:
-Origin Setup
-Your S3 bucket acts as the origin server
-User Request
-A user opens your website URL
-Nearest Edge Location
-CloudFront routes request to nearest edge location (e.g. Mumbai)
-Cache Check
-If file is cached → served instantly ⚡
-If not cached → fetched from S3
-Caching
-File is stored (cached) at edge location for future requests
-Faster Delivery
-Next users get content directly from edge server
+### 🔄 Detailed Flow:
+| Step                  | Description                                                                    |
+| --------------------- | ------------------------------------------------------------------------------ |
+| Origin Setup          | Your S3 bucket acts as the origin server                                       |
+| User Request          | A user opens your website URL                                                  |
+| Nearest Edge Location | Amazon CloudFront routes request to nearest edge location (e.g. Mumbai)        |
+| Cache Check           | If file is cached → served instantly ⚡; If not cached → fetched from Amazon S3 |
+| Caching               | File is stored (cached) at edge location for future requests                   |
+| Faster Delivery       | Next users get content directly from edge server                               |
+
 
 ### 🎯 Example
 
