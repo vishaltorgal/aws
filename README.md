@@ -26,7 +26,9 @@ Amazon S3 (Simple Storage Service) is a cloud storage service used to store and 
 
 <br>
 
-## 2. Static website using Amazon S3
+## 2. S3 Hosting
+
+`Static website using Amazon S3`
 
 ### 🚀 Step 1: Create an S3 Bucket
 - Go to AWS Console → S3
